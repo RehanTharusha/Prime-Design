@@ -1,0 +1,300 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #fff;
+    color: #000;
+}
+
+.break{
+    margin: 10px;
+    border-top: solid black 2px;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.6s;
+    padding: 30px 100px;
+    background: #fff;
+}
+
+header .logo{
+    font-family: 'Maven Pro', sans-serif;  
+    color: #000;
+}
+
+header a{
+    text-decoration: none;
+}
+
+header ul{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+header ul li{
+    position: relative;
+    list-style: none;
+    
+}
+
+header ul li a{
+    position: relative;
+    margin: 0 15px;
+    text-decoration: none;
+    color: #000;
+    transition: text-decoration 1s;
+}
+
+header ul li a:hover{
+    text-decoration: underline;
+}
+
+header.sticky{
+    background: #000;
+}
+
+header.sticky .logo{
+    color: white;
+}
+
+header.sticky ul li a{
+    color: #fff;
+}
+
+header.sticky #signup{
+    border: solid 3px white;
+    padding: 4px;
+    transition: 0.5s;
+}
+
+header.sticky #signup:hover{
+    text-decoration: none;
+    background: white;
+    color: black;
+}
+
+
+.banner{
+    z-index: -1;
+    display: block;
+    position: relative;
+    width: 100%;
+    overflow:hidden;
+    height: 90vh;
+}
+
+.banner h1{
+    margin-top: 100px;
+}
+
+.banner video{
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-color: #111;
+    background-size: cover;
+    height: 1000px;
+    width: 100%;
+}
+
+.mainHeader {
+    padding: 20px 100px;
+    background: #000;
+    color: white;
+    border: 2px solid black ;
+    text-align: center;
+}
+
+
+.catalogue{ 
+    padding-top: 50px;
+}
+
+.row{
+    display: flex;
+}
+/* 
+.card {
+    max-width: 60vh;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+    transition: 0.5s;
+  } */
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 350px;
+    margin: auto;
+    padding: 20px;  
+    transition: 0.5s;          
+}
+
+.card img{
+    border-radius:1000000px;
+    width: 50px;
+}
+
+.card:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); 
+    border-radius: 10000000px;
+}
+
+
+.textBanner1{
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    text-align: center;
+    font-size: 18px;
+}
+
+.textBanner1 a{
+    text-decoration: none;
+    color: black;
+    transition: 0.5s;
+}
+
+.textBanner1  a:hover{
+    text-decoration: underline;
+}
+
+.imageBanner{
+
+}
+
+
+.testimonials{ /*This is the testimonials section*/
+    padding-top: 100px;
+    padding-bottom: 100px;
+    text-align: center;
+}
+
+.testimonials h1{  
+    font-family: 'Fraunces', serif;
+    padding-bottom: 50px;
+    color: hsl(216, 3%, 66%);
+}
+
+    .flexContainer{
+        display: flex;
+        justify-content: space-between;
+        
+
+    }
+
+        .comment{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 350px;
+            margin: auto;
+            padding: 20px;            
+        }
+
+        .comment img{
+            border-radius:1000000px;
+            width: 80px;
+        }
+
+        .comment p{
+            font-family: 'Barlow', sans-serif;
+            text-align: center;
+            padding: 20% 0;
+            color: hsl(232, 10%, 55%);
+        }
+
+        .comment h1{
+            font-family: 'Fraunces', serif;
+            font-weight: 700;
+            font-size: 20px;  
+            padding-bottom: 10px;
+            color: #111;
+        }
+
+        .comment h3{
+            font-family: 'Barlow', sans-serif;
+            color:hsl(210, 4%, 67%);
+            font-size: 15px;
+            
+        }
+
+/*End of the testimonials section*/
+
+
+/* footer section */
+
+footer{
+    display: flex;
+    justify-content: flex-start;
+    background-color: #111;
+    padding-top: 25px;
+    padding-bottom: 50px;
+    
+}
+
+footer .section{
+    margin-left: 50px;
+    margin-right: 30px;
+    
+  }
+
+footer .section h2{
+    font-family: 'Maven Pro', sans-serif;
+    margin-top: 20px;
+    margin-bottom:10px;
+    color: #fff;
+    border: solid;
+    padding-right: 15px;
+    padding-left: 5px;
+}
+
+footer .section a{
+    text-decoration: none;
+    color: #fff;
+    margin-bottom: 10px;
+    padding-left: 5px;
+    font-size: 17px;
+}
+
+/* Css from other pages */
+
+     
+.form{
+    display: flex;
+    justify-content: space-evenly;
+    background: black;
+    color: white;
+    border: black solid 2px;
+    margin: 150px 40% 40% 40%;
+    padding: 10px;
+}
+
+.signup-form{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.input{
+    display: flex;
+    flex-direction: column;
+    max-width: 200px;
+}
+
+.input input{
+    margin-bottom: 8px;
+}
