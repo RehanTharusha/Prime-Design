@@ -1,33 +1,146 @@
 
-@media (max-width: 600px){
+@media (max-width: 1024px){
+
+    header{
+        flex-direction: column;
+        padding: 0;
+        padding-bottom: 2vh;
+    }
+
+    header a{
+        font-size: 14px;
+        padding: 0px;
+    }
+
+    
+.video-container{
+    margin-top: 5vh;
+}
+
+.overlay-desc{
+    display: none;
+}
+
+
+/* this whole part is the catalogue section. */
+    .row{
+        /* flex-direction: column; */
+        margin-bottom: 2vh;
+    }
+
+    .card{
+        margin-bottom: 3vh;
+        max-width: 14vh;
+    }   
+
+
+    .card img{
+        width: 10vh;
+        border-top-right-radius: 12px;
+        border-top-left-radius: 12px;   
+    }
+
+    .captionHeading{
+        display: none;
+    }
+
+    .caption{
+        display: none;
+        width: 35vh;
+        padding-bottom: 2vh;
+    }
+
+    .card .banner_button{
+        display: none;
+    }
+
+    .textBanner1 a{
+        background: #314B40;
+        padding: 15px 30px;
+        text-decoration: none;
+        color: #fff;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        transition: 0.5s;
+    } 
+
+    
+/* ---------------------------------- */
+   
+
 
     .container{
         max-width: 600px;
         flex-direction: column-reverse;
         text-align: center;
-        margin-bottom: 50px;
-        margin-top: 50px;
+        margin: 10vh 4vh;
     }
  
+    .section1{
+        padding-bottom: 10vh;
+    }
+    
     .section1 h2{
-     font-size: 2em;
+        font-size: 2em;
     } 
- 
-    .stats_container{
-        flex-direction: column;
-        
-    }
- 
-     .section2 img{
+
+    .section2 img{
         width: 100%;
         height: 100%;
-     }   
- 
-     .stats {
-         text-align: center;
+
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+
+        border-top-right-radius:8px;
+        border-top-left-radius: 8px;
+    }   
+
+
+     
+/* this is the testimonails flex container */
+
+     .testimonials{
+            margin-top: 10vh;
      }
- 
-     .stats p{
-         padding-left: 15px;
-     }    
+
+     .flexContainer{
+        flex-direction: column;
+     }
+/* -------------------------------------- */
+
+
+
+/* this is the newsletter part in the body.  */
+    .box{
+         margin-left: 8vh;
+         margin-right: 8vh;
+     }
+
+/* this is the newsletter part in the footer. */
+    .newsletter-section{
+        display: none;
+    }
+
+/* foooooooooooooootttttttttteeeeeeeeeeerrrrrrrrrrrr */
+/* foooooooooooooootttttttttteeeeeeeeeeerrrrrrrrrrrr */
+
+
+
+.section-container{
+    flex-direction: column;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 10vh;
+}
+
+
+footer .logo-section p{
+    max-width: 30vh;
+    margin-left: 5vh;
+}
+
+/* ------------------------------------------------------ */
+/* ------------------------------------------------------ */
+
+
  }
