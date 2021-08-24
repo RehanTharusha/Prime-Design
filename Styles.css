@@ -53,7 +53,7 @@ header ul li{
 header ul li a{
     font-family: 'Work Sans', sans-serif;
     position: relative;
-    margin: 0 15px;
+    margin: 0 10px;
     text-decoration: none;
     color: #000;
     transition: 0.5s;
@@ -88,11 +88,18 @@ header.sticky a:hover{
     color: black;
 }
 
+.header{
+    display: none;
+}
+
+
 
 
 .video-container {
     position: relative;
   }
+
+
   .video-container video {
     height: auto;
     vertical-align: middle;
@@ -111,7 +118,8 @@ header.sticky a:hover{
   }
 
   .overlay-desc img{
-      width: 50vh;
+
+    width: 50vh;
   }
 
 

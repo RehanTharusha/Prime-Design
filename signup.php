@@ -98,15 +98,59 @@
                         <input type="text" name="email" placeholder="Email...">
                         <input type="text" name="uid" placeholder="Username">
                         <input type="password" name="pwd" placeholder="Password...">
-                        <input type="password" name="repeatpwd" placeholder="Repeat password...">
+                        <input type="password" name="pwdrepeat" placeholder="Repeat password...">
                         <button type="submit" name="submit">Sign Up!</button>
                 </div>
             </form>
-        </section>
+<?php
 
+
+
+
+    if (isset($_GET["error"])) {
+        if ($_GET["error"] == "emptyinput") {
+            echo "<p>Please fill in all the fields!</p>";
+        }
+
+        elseif ($_GET["error"] == "invaliduid") {
+            echo "<p>Please choose a proper username!</p>";
+        }
+
+        elseif ($_GET["error"] == "invalidemail") {
+            echo "<p>Please choose a proper email address!</p>";
+        }
+
+        elseif ($_GET["error"] == "passwordsdontmatch") {
+            echo "<p>The passwords don't match. Try again.</p>";
+        }
+
+        elseif ($_GET["error"] == "stmtfailed") {
+            echo "<p>Something went wrong. Try again.</p>";
+        }
+
+        elseif ($_GET["error"] == "usernametaken") {
+            echo "<p>This username is already taken.</p>";
+        }
+
+        elseif ($_GET["error"] == "none") {
+            echo "<p>Congratulations! You have successfully signed up!</p>";
+        }
+    }
+
+?>
+   
+
+
+
+        </section>
     </div>
 
 </div>
+
+ 
+    
+    
+
 </body>
 
 

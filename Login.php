@@ -94,13 +94,27 @@
 
             <form action="Includes/login.inc.php" method="post">
                 <div class="input">
-                        <input type="text" name="name" placeholder="Username/Email...">
+                        <input type="text" name="uid" placeholder="Username/Email...">
                         <input type="password" name="pwd" placeholder="Password...">
                         <button type="submit" name="Submit">Log In!</button>
                 </div>
             </form>
-        </section>
+                    
+        <?php
+    if (isset($_GET["error"])) {
+        if ($_GET["error"] == "emptyinput") {
+            echo "<p>Please fill in all the fields!</p>";
+        }
 
+        elseif ($_GET["error"] == "wronglogin") {
+            echo "<p>Incorrect login information. Try again</p>";
+        }
+
+    }
+
+?>
+
+        </section>
 
     </div>
 </div>

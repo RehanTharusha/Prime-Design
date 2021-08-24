@@ -1,25 +1,29 @@
 
 @media (max-width: 1024px){
 
-    header{
-        flex-direction: column;
-        padding: 0;
-        padding-bottom: 2vh;
-    }
-
-    header a{
-        font-size: 14px;
-        padding: 0px;
-    }
-
-    
-.video-container{
-    margin-top: 5vh;
-}
-
-.overlay-desc{
+.desktop-header{
     display: none;
 }
+
+
+
+    .video-container{
+        margin-top: 6vh;
+    }
+
+    .overlay-desc{
+        display: none;
+    }
+
+    .mainHeader{
+        font-size: 12px;
+        padding:2vh;
+        margin: 0;
+    }
+
+
+
+
 
 
 /* this whole part is the catalogue section. */
@@ -55,6 +59,7 @@
     }
 
     .textBanner1 a{
+        font-size: 10px;
         background: #314B40;
         padding: 15px 30px;
         text-decoration: none;
@@ -81,7 +86,7 @@
     }
     
     .section1 h2{
-        font-size: 2em;
+        font-size: 1.5em;
     } 
 
     .section2 img{
@@ -142,5 +147,4 @@ footer .logo-section p{
 /* ------------------------------------------------------ */
 /* ------------------------------------------------------ */
 
-
- }
+}
