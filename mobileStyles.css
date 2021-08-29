@@ -58,6 +58,11 @@
         display: none;
     }
 
+    
+    .textBanner1{
+        margin-bottom: 0;
+    }
+
     .textBanner1 a{
         font-size: 10px;
         background: #314B40;
@@ -72,6 +77,25 @@
     
 /* ---------------------------------- */
    
+
+/* -----------------promo section------------------------ */
+.promo-container{
+    display: none;
+}
+
+.mobile-promo-container{
+    display: block;
+    margin-top: 0;
+}
+
+.mobile-promo-container img{
+    width: 100%;
+
+}
+
+
+/* ------------------end of promo-section---------------------------- */
+
 
 
     .container{
@@ -111,6 +135,10 @@
      .flexContainer{
         flex-direction: column;
      }
+
+     .testimonials{
+
+     };
 /* -------------------------------------- */
 
 

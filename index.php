@@ -126,157 +126,130 @@
 
         
     <div class="textBanner1">
-        <a href="https://prime-designs-shop.000webhostapp.com/">Explore our catalogue.</a>
+        <a href="https://prime-designs-shop.000webhostapp.com/">Explore our catalogue.
+        <div class="arrow"> &#8594;</div>
+        </a>
     </div>
 
 </div>
 
 
 
-<style>
-* {box-sizing: border-box;}
-body {font-family: Verdana, sans-serif;}
-.mySlides {display: none;}
-img {vertical-align: middle;}
+<!-- /* --------------------------------------- promo sections --------------------------------------- */ -->
+
+<div class="promo-container">
+
+    <div class="text-section">
+
+        <p class="promo-paragraph-one">Brand New</p>
+        
+        <h2>Summer Collection</h2>
+
+        <p class="promo-paragraph-two">
+            Check out our comfy crewnecks, lightweight khakis, breathable tanktops and more.
+        </p>
+
+        <div class="promoButton">
+            <a href="about.php">Shop Women's</a>
+        </div>
+
+        <div class="promoButton">
+            <a href="about.php">Shop All</a>
+        </div>
 
 
+    </div>
 
-/* Slideshow container */
-.slideshow-container {
-  max-width: 1000px;
-  position: relative;
-  margin: auto;
-}
-
-/* Caption text */
-.text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
-}
-
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-
-/* The dots/bullets/indicators */
-.dot {
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-.active {
-  background-color: #717171;
-}
-
-/* Fading animation */
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@-webkit-keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
-
-@keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
-
-/* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
-  .text {font-size: 11px}
-}
-</style>
-
-<div class="slideshow-container">
-
-<div class="mySlides fade">
-  <div class="numbertext">1 / 3</div>
-  <img src="Images/Product Images/The-Scout-Mustard-The-Level-Collective_1000X1000.jpg" style="width:100%">
-  <div class="text">Caption Text</div>
-</div>
-
-<div class="mySlides fade">
-  <div class="numbertext">2 / 3</div>
-  <img src="Images/Product Images/The-Scout-Mustard-The-Level-Collective_1000X1000.jpg" style="width:100%">
-  <div class="text">Caption Two</div>
-</div>
-
-<div class="mySlides fade">
-  <div class="numbertext">3 / 3</div>
-  <img src="Images/Product Images/The-Scout-Mustard-The-Level-Collective_1000X1000.jpg" style="width:100%">
-  <div class="text">Caption Three</div>
-</div>
+    <div class="image-section">
+        <img src="Images/womens_jeans.jpg" style="margin-bottom: 8vh;" alt="preview_image ">
+        <img src="Images/promo banner image.jpg" alt="preview_image ">
+        <img src="Images/banner_image_another.jpg" style="margin-bottom: 1vh;" alt="preview_image ">
+    </div>
 
 </div>
-<br>
 
-<div style="text-align:center">
-  <span class="dot"></span> 
-  <span class="dot"></span> 
-  <span class="dot"></span> 
+
+
+<div class="promo-container">
+    
+    <div class="giftcard-image-section">
+        <img src="Images/store2_360x.jpg" id="image-1" alt="">
+        <img src="Images/shop_image.jpg" id="image-2" alt="">
+    </div>
+
+    <div class="text-section">
+
+        <p class="promo-paragraph-one">GiftCards</p>
+        
+        <h2>Support your <br> neighborhood</h2>
+
+        <p class="promo-paragraph-two">
+            We believe that local businesses are an integral part of a neighborhood's character. Help keep us local by buying a gift card!
+        </p>
+
+        <div class="promoButton">
+            <a href="about.php">Buy Giftcards</a>
+        </div>
+
+    </div>
+
+    
+
 </div>
 
-<script>
-var slideIndex = 0;
-showSlides();
 
-function showSlides() {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";  
-  }
-  slideIndex++;
-  if (slideIndex > slides.length) {slideIndex = 1}    
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " active";
-  setTimeout(showSlides, 2000); // Change image every 2 seconds
-}
-</script>
+<div class="mobile-promo-container">
+
+        <img src="Images/promo banner image.jpg" alt="">
 
 
+        <div class="text-section">
+
+            <p class="promo-paragraph-one">Brand New</p>
+            
+            <h2>Summer Collection</h2>
+
+            <p class="promo-paragraph-two">
+                Check out our comfy crewnecks, lightweight khakis, breathable tanktops and more.
+            </p>
+
+            <div class="promoButton">
+                <a href="about.php">Shop Women's</a>
+            </div>
+
+            <div class="promoButton">
+                <a href="about.php">Shop All</a>
+            </div>
+        </div>
+</div>
+
+
+<div class="mobile-promo-container">
+        
+        <img src="Images/store2_360x.jpg" id="image-1" alt="">
+
+    <div class="text-section">
+
+        <p class="promo-paragraph-one">GiftCards</p>
+        
+        <h2>Support your <br> neighborhood</h2>
+
+        <p class="promo-paragraph-two">
+            We believe that local businesses are an integral part of a neighborhood's character. Help keep us local by buying a gift card!
+        </p>
+
+        <div class="promoButton">
+            <a href="about.php">Buy Giftcards</a>
+        </div>
+
+    </div>
+
+</div>
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<!-- /* --------------------------------------- end of promo containers ---------------------------------------*/ -->
 
 
 
@@ -317,7 +290,7 @@ function showSlides() {
 <!-- this is the testimonials section -->
 <div class="testimonials">
     
-    <h1>Client Testimonials</h1>
+    <h1>Dont take our word for it.</h1>
 
     <div class="flexContainer">
 
@@ -369,7 +342,7 @@ function showSlides() {
 
 <div class="newsletter">
     <div class="box">
-        <h2>Subscribe to our Newsletter</h2>
+        <h2>Sign up to save!</h2>
         <p>Join our newsletter to stay in the loop with all the latest happenings and special offers.</p>
         <div class="form-control">
             <input type="text" class="email-input" placeholder="Enter e-mail address" />

@@ -248,18 +248,139 @@ header.sticky a:hover{
     padding-bottom: 5vh;
     text-align: center;
     font-size: 18px;
+    transition: 1s;
     
 }
 
 .textBanner1 a{
+    font-family: 'Work Sans', sans-serif;
     text-decoration: none;
-    color: black;
-    transition: 0.5s;
+    background-color: #262B2C;
+    padding: 2vh;
+    padding-left: 5vh;
+    color: white;
+    transition: 1s;
+}
+
+.textBanner1 .arrow{
+    display: inline-block;
+    visibility: hidden;
+    transition: 1s;
+    -webkit-animation: fadeout 1s;
+}
+
+.textBanner1 a:hover .arrow{
+    -webkit-animation: fadein 1s;
+    visibility: visible;
+    
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@keyframes fadeout {
+    from { opacity: 1; }
+    to   { opacity: 0; }
 }
 
 .textBanner1  a:hover{
-    text-decoration: underline;
+    /* letter-spacing: 2px; */
 }
+
+/* --------------------------------------- promo sections --------------------------------------- */
+
+            .promo-container{
+                display: flex;
+                flex-direction: row-reverse;
+                justify-content: space-evenly;
+                margin: 10vh 10% 0 10%;
+                border-radius: 8px;
+                margin-bottom: 10vh;
+            }
+
+            .text-section{
+            padding-left: 50px;
+            padding-right: 50px;
+            }
+
+            .text-section h2{
+                font-family: 'Spartan', sans-serif;
+                text-shadow: -10px 15px 20px rgba(0, 0, 0, 0.2);
+                /* padding-top: 50px; */
+                font-size: 40px;
+                
+            }
+
+            .text-section p{
+                font-family: 'Spartan', sans-serif;
+                line-height: 20px;
+                color: black;
+                max-width:350px ;
+                margin-top: 3vh;
+            }
+
+            .promo-paragraph-one{
+                letter-spacing: 2px;
+                font-size: 18px;
+                margin-bottom: 2vh;
+            }
+
+
+            .promoButton{
+            margin-top: 5vh;
+            margin-bottom: 5vh;
+            }
+
+            .promoButton a{
+                font-family: 'Work Sans', sans-serif;
+                text-decoration: none;
+                background-color: #262B2C;
+                padding: 2vh;
+                color: white;
+                transition: 1s;
+            }
+
+
+
+            .image-section img{
+                max-width: 30vh;
+                height: auto;
+                box-shadow: 0 16px 20px 0 rgba(0, 0, 0, 0.2);
+                margin-right: 2vh;
+            }
+
+
+            .giftcard-image-section{
+                display: flex;
+                flex-direction: column;
+            }
+
+
+            .giftcard-image-section img{
+                max-width: 40vh;
+                box-shadow: 0 16px 20px 0 rgba(0, 0, 0, 0.2);
+            }
+
+            .giftcard-image-section #image-1{
+                margin-left: 10vh;
+                margin-top: 1vh;
+                margin-bottom: 1vh;
+            }
+
+            .mobile-promo-container{
+                display: none;
+            }    
+
+
+/* --------------------------------------- end of promo containers ---------------------------------------*/
+
+
+
+
+
+
 
 
 .container{
